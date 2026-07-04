@@ -221,7 +221,7 @@ food_seg.yaml
 Dry-run first if you want to validate without writing:
 
 ```powershell
-.\.venv\Scripts\python.exe scripts\convert_coco_loco_to_yolo_seg.py `
+.\.venv\Scripts\python.exe scripts\convert_coco_to_yolo_seg.py `
   --dataset-dir "C:\Users\Jamil Gwapo\Downloads\to_combine_4_actual" `
   --dry-run
 ```
@@ -239,9 +239,8 @@ To make a fresh train/val/test split from the combined `annotations_coco.json`, 
 Dry-run:
 
 ```powershell
-.\.venv\Scripts\python.exe scripts\convert_coco_loco_to_yolo_seg.py `
+.\.venv\Scripts\python.exe scripts\convert_coco_to_yolo_seg.py `
   --dataset-dir "C:\Users\Jamil Gwapo\Downloads\to_combine_4_actual" `
-  --split-ratio 0.7 0.15 0.15 `
   --seed 42 `
   --dry-run
 ```
@@ -249,9 +248,8 @@ Dry-run:
 Write the resplit dataset:
 
 ```powershell
-.\.venv\Scripts\python.exe scripts\convert_coco_loco_to_yolo_seg.py `
+.\.venv\Scripts\python.exe scripts\convert_coco_to_yolo_seg.py `
   --dataset-dir "C:\Users\Jamil Gwapo\Downloads\to_combine_4_actual" `
-  --split-ratio 0.7 0.15 0.15 `
   --seed 42 `
   --overwrite
 ```
