@@ -1,0 +1,11 @@
+.env
+__pycache__/
+*.pyc
+.env
+.venv
+datasets
+onnxruntime_web_demo
+pwa_integration_staging
+reports
+second_dataset.zip
+runs
